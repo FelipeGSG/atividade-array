@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 1</title>
+</head>
+<body>
+  <header>
+    <h1>Atividades com array</h1>
+    <nav>
+      <a href="ativ1.html">Atividade 1</a> |
+      <a href="ativ2.html">Atividade 2</a> |
+      <a href="ativ3.html">Atividade 3</a> 
+    </nav>
+  </header>
+  <main>
+    <br><br>
+    <p>Array: <span id="array"></span></p>
+    <p>5º item (index = 4) - <span id="pos5"></span></p>
+  </main>
+
+  <script>
+    var paises = ['Angola', 'Nicaragua', 'China', 'Honduras', 'Brasil', 'Bélgica', 'Rússia', 'EUA', 'Bolívia', 'Argélia']
+
+    document.getElementById("array").innerHTML = paises
+    document.getElementById("pos5").innerHTML = paises[4]
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 3</title>
+</head>
+<body>
+  <header>
+    <h1>Atividades com array</h1>
+    <nav>
+      <a href="ativ1.html">Atividade 1</a> |
+      <a href="ativ2.html">Atividade 2</a> |
+      <a href="ativ3.html">Atividade 3</a> 
+    </nav>
+  </header>
+  <main>
+    <p id="array" style="word-wrap: break-word;">ARRAY DE NOMES:</p>
+    <br><br>
+    <p>Número escolhido: <span id="num"></span></p>
+    <p>Nome escolhido: <span id="nome"></span></p>
+  </main>
+
+  <script>
+    var nomes = [
+    "Ana", "Carlos", "Beatriz", "Felipe", "Gabriela", "Lucas", "Mariana", "Pedro", "João", "Larissa", 
+    "Ricardo", "Juliana", "Paulo", "Fernanda", "Thiago", "Sofia", "Rafael", "Camila", "Daniel", "Tatiane", 
+    "Eduardo", "Amanda", "Vinícius", "Luciana", "Bruno", "Marta", "Gustavo", "Carla", "Matheus", "Renata"
+    ]
+
+    do{
+      var index = parseInt(prompt("Digite um número de 1-30 para escolher o nome"))
+    }while(index < 1 || index > 30)
+
+    // document.getElementById("array").innerHTML = "Array de nomes:" + nomes
+    nomes.forEach(nome =>{
+      document.getElementById("array").innerHTML += nome + ", " 
+    })
+
+    document.getElementById("num").innerHTML = index
+    document.getElementById("nome").innerHTML = nomes[index-1]
+  </script>
+</body>
+</html>
